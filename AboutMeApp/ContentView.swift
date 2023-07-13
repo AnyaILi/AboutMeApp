@@ -11,14 +11,13 @@ struct ContentView: View {
     @State private var facts = "Age: 15\nGrade: 10th\nSiblings: 1\nPet: Hamster (Bean)\nFrom: Cupertino, CA\nBirthday: 2/19/2008"
     var body: some View {
         ZStack{
-            Color(.systemYellow)
+            Color(red: 1.2, green: 0.7, blue: 0.7)
                 .ignoresSafeArea()
             VStack {
                 HStack {
                     Text("Anya Li")
-                        .font(.title2)
+                        .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.5, saturation: 0.988, brightness: 0.684))
                     Spacer()
                 }
                 Spacer()
@@ -37,6 +36,10 @@ struct ContentView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         HStack{
+                            Image("purple")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(20)
                             VStack{
                                 Text("About Me")
                                     .font(.title)
