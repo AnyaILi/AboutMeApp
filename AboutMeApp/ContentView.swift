@@ -32,8 +32,7 @@ struct ContentView: View {
                                 .frame(width: 200.0)
                                 .cornerRadius(20)
                         }
-                        Text("..........................................")
-                            .font(.largeTitle)
+                        Text(".................................................................")
                             .fontWeight(.bold)
                         HStack{
                             Image("purple")
@@ -55,7 +54,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 Button("More Facts"){
-                    facts = "Hobbies: \n- Artistic Swimming\n- Coding\n- Robotics\n- Crafts\n\nFavorite Food: Ice Cream!\n\nThings I love:\n- Dogs\n- The snow\n- Hanging out with friends"
+                    facts = "Hobbies: \n- Artistic Swimming\n- Coding\n- Robotics\n- Crafts\n\nFavorite Food: Ice Cream!\n\nThings I love:\n- Dogs\n- The snow"
                 }
                 .font(.title2)
                 .buttonStyle(.borderedProminent)
